@@ -16,7 +16,7 @@ TEST(MathAddTest, ZeroB) {
 TEST(MathSubTest, PositiveNum) { 
     EXPECT_EQ(0, math::sub(1, 1));
     EXPECT_EQ(-6, math::sub(2, 8));
-    EXPECT_EQ(100, math::sub(12, 50));
+    EXPECT_EQ(100, math::sub(150, 50));
 }
 
 TEST(MathSubTest, ZeroB) { 
