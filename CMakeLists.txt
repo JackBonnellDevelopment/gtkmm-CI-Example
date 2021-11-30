@@ -21,7 +21,6 @@ if(BUILD_DOCUMENTATION)
 
     configure_file(${doxyfile_in} ${doxyfile} @ONLY)
 
-    message("Doxygen build started.")
 
     add_custom_target(docs
                       COMMAND ${DOXYGEN_EXECUTABLE} ${doxyfile_in}
