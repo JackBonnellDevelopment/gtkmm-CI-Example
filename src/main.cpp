@@ -3,6 +3,7 @@
 #include "math/math.h"
 Gtk::Window* gWindow = nullptr;
 
+
 int main(int argc, char const *argv[])
 {  
     auto app = Gtk::Application::create("org.gtkmm.example");

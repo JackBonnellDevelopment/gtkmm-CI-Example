@@ -12,10 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
-      run: sudo apt-get install libgtkmm-3.0
+      run: sudo apt install texlive-latex-base && sudo apt-get install texlive-latex-extra && sudo apt-get install graphviz && sudo apt-get install libgtkmm-3.0 && sudo apt install doxygen && sudo apt install graphviz
     - name: configure
       run: mkdir build && cd build && cmake ..
     - name: make
       run: cd build && make test
     - name: Run Test
       run: cd build && ./test/test
+    - name: 'Upload Artifact'
